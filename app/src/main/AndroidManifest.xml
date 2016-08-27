@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.bird_o_pedia">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logos"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SelectState"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MadhyaPradesh"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".mpWater"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".test"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".DucksInMp"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>
