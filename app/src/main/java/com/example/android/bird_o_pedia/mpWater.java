@@ -434,13 +434,6 @@ public class mpWater extends AppCompatActivity {
                         startActivity(intent);
                     }
 
-                    if (position == 15) //Turn
-                    {
-                        Intent intent = new Intent(mpWater.this, DucksInMp.class);
-                        SilhouetteDescription obj = birdList.get(position);
-                        intent.putExtra("name", obj.getNameOfTheBirdEnglish());
-                        startActivity(intent);
-                    }
 
                     if (position == 16) //Grebes
                     {
@@ -1717,7 +1710,7 @@ public class mpWater extends AppCompatActivity {
         birdList.add(Wheatear);
 
         //Redstart
-        SilhouetteDescription Redstart = new SilhouetteDescription("Redear", "2 types in Madhya Pradesh", R.drawable.silhouette_turn);
+        SilhouetteDescription Redstart = new SilhouetteDescription("Redstart", "2 types in Madhya Pradesh", R.drawable.silhouette_turn);
         birdList.add(Redstart);
     }
 

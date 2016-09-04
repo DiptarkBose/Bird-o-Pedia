@@ -47,11 +47,25 @@ public class test extends AppCompatActivity {
         bird_description_final.setText(description);
 
         Chirp = MediaPlayer.create(this, bird_call);
-        Button playButton = (Button) findViewById(R.id.bird_call);
+
+
+
+        final Button playButton = (Button) findViewById(R.id.bird_call);
         playButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Chirp.start();
+                if(!Chirp.isPlaying()){ // here mp is object of MediaPlayer class
+                    Chirp.start();
+                    playButton.setText("Pause");
+
+                    //showNotification("Player State Plying");
+                }
+                else if(Chirp.isPlaying()){
+                    Chirp.pause();
+                    playButton.setText("Chirp!");
+                    //showNotification("Player State Pause");
+
+                }
             }
         });
 
